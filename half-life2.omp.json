@@ -40,7 +40,7 @@
           "type": "path"
         },
         {
-          "foreground": "#d8bbb8",
+          "foreground": "#d8cab8",
           "properties": {
             "branch_ahead_icon": "",
             "branch_behind_icon": "",
