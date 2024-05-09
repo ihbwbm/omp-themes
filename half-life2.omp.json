@@ -56,7 +56,7 @@
             "tag_icon": ""
           },
           "style": "plain",
-          "template": "<#d8bbb8>::</>{{ .HEAD }}{{ if .Staging.Changed }}<#3D9387> \u25cf {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> \u25cf {{ .Working.String }}</>{{ end }} ",
+          "template": "<#d8cab8>::</>{{ .HEAD }}{{ if .Staging.Changed }}<#3D9387> \u25cf {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> \u25cf {{ .Working.String }}</>{{ end }} ",
           "type": "git"
         },
         {
