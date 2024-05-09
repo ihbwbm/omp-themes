@@ -1,0 +1,87 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#74b6a9",
+          "style": "plain",
+          "template": "{{ .UserName }}",
+          "type": "session"
+        },
+        {
+          "foreground": "#5a9186",
+          "style": "plain",
+          "template": "@",
+          "type": "text"
+        },
+        {
+          "foreground": "#316d65",
+          "style": "plain",
+          "template": "{{ .HostName }}",
+          "type": "session"
+        },
+        {
+          "foreground": "#d8bbb8",
+          "style": "plain",
+          "template": "::",
+          "type": "text"
+        },
+        {
+          "foreground": "#ffc000",
+          "properties": {
+            "folder_icon": "..",
+            "home_icon": " ~",
+            "style": "agnoster_short"
+          },
+          "style": "plain",
+          "template": "{{ .Path }} ",
+          "type": "path"
+        },
+        {
+          "foreground": "#d8bbb8",
+          "properties": {
+            "branch_ahead_icon": "",
+            "branch_behind_icon": "",
+            "branch_gone_icon": "",
+            "branch_icon": "",
+            "branch_identical_icon": "",
+            "cherry_pick_icon": "",
+            "commit_icon": "",
+            "fetch_status": true,
+            "merge_icon": "",
+            "rebase_icon": "",
+            "revert_icon": "",
+            "tag_icon": ""
+          },
+          "style": "plain",
+          "template": "<#d8bbb8>::</>{{ .HEAD }}{{ if .Staging.Changed }}<#3D9387> \u25cf {{ .Staging.String }}</>{{ end }}{{ if .Working.Changed }}<#D75F00> \u25cf {{ .Working.String }}</>{{ end }} ",
+          "type": "git"
+        },
+        {
+          "foreground": "#D75F00",
+          "style": "plain",
+          "template": "(λ)",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    },
+    {
+      "alignment": "left",
+      "newline": true,
+      "segments": [
+        {
+          "foreground": "#D75F00",
+          "style": "plain",
+          "template": "∫",
+          "type": "text"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 2
+}
